@@ -117,15 +117,10 @@
             <h1><span class="blue-text">our</span> <span class="gold">product</span></h1>
             <div class="main-product-box flex-box">
                 <div class="box" data-aos="zoom-in-down">
-                    <!-- <div class="icons">
-                        <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
-                    </div> -->
                     <div class="image">
                         <img src="image/product_01.jpg" alt="">
                     </div>
-                    <div class="text">
+                    <div class="text" id="text-1">
                         <h2><span class="blue-text">air-dried food</span></h2>
                         <h3><span class="gold">$15.00 - $30.00</span></h3>
                     </div>
@@ -323,12 +318,20 @@
         </div>
         <div class="contact-form" data-aos="flip-right">
             <h1>contact us</h1>
-            <form action="">
-                <input type="text" placeholder="your name"><br>
-                <input type="email" placeholder="your email"><br>
-                <input type="number" placeholder="your number"><br>
+            <form action="index.php" onsubmit="return Validation();">
+                <div><input type="text" id="name" placeholder="your name">
+                    <p class="error" id="name_error"></p>
+                </div>
+                <div>
+                    <input type="email" id="email" placeholder="your email" style="text-transform: lowercase;">
+                    <p class="error" id="email_error"></p>
+                </div>
+                <div>
+                    <input type="number" id="phone" placeholder="your number">
+                    <p class="error" id="phone_error"></p>
+                </div>
                 <textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea><br>
-                <a href="#" class="blue-btn btn-1 contact-btn">send message</a>
+                <button class="blue-btn btn-1 contact-btn">send message</button>
             </form>
         </div>
 
@@ -336,26 +339,25 @@
     <!--end contact section-->
 
     <!--footer-->
-
-    <footer data-aos="fade-up">
-        <div class="inner">
-            <div class="share">
-                <a href="#" class="btn-1 blue-btn"> <span class="fab fa-facebook-f"></span> facebook</a>
-                <a href="#" class="btn-1 blue-btn"> <span class="fab fa-twitter"></span> twitter</a>
-                <a href="#" class="btn-1 blue-btn"> <span class="fab fa-instagram"></span> instagram</a>
-                <a href="#" class="btn-1 blue-btn"> <span class="fab fa-linkedin"></span> linkedin</a>
+    <footer>
+        <div class="inner ">
+            <div class="share ">
+                <a href="# " class="btn-1 blue-btn "> <span class="fab fa-facebook-f "></span> facebook</a>
+                <a href="# " class="btn-1 blue-btn "> <span class="fab fa-twitter "></span> twitter</a>
+                <a href="# " class="btn-1 blue-btn "> <span class="fab fa-instagram "></span> instagram</a>
+                <a href="# " class="btn-1 blue-btn "> <span class="fab fa-linkedin "></span> linkedin</a>
             </div>
-            <div class="copyright">
-                <h3>crteated by <span class="gold">mr. khaleel ahmad</span> | all right reserve</h3>
+            <div class="copyright ">
+                <h3>crteated by <span class="gold ">mr. khaleel ahmad</span> | all right reserve</h3>
             </div>
         </div>
     </footer>
 
 
     <!--aos animation js cdn-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
     <!-- custom js link -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js "></script>
 </body>
 
 </html>
