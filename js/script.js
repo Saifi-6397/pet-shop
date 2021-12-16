@@ -35,21 +35,21 @@ var return_val = 1;
 
 function Validation() {
     if (user_name.value == "") {
-        document.getElementById("name_error").innerHTML = "Please Entter Your Name";
+        document.getElementById("name_error").innerHTML = "Please Enter Your Name";
         return_val = 0;
     } else {
         document.getElementById("name_error").innerHTML = "";
         return_val = 1;
     }
     if (user_email.value == "") {
-        document.getElementById("email_error").innerHTML = "Please Entter Your Email";
+        document.getElementById("email_error").innerHTML = "Please Enter Your Email";
         return_val = 0;
     } else {
         document.getElementById("email_error").innerHTML = "";
         return_val = 1;
     }
     if (user_phone.value == "") {
-        document.getElementById("phone_error").innerHTML = "Please Entter Your Phone No";
+        document.getElementById("phone_error").innerHTML = "Please Enter Your Phone No";
         return_val = 0;
     } else {
         document.getElementById("phone_error").innerHTML = "";

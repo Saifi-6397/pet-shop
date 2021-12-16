@@ -34,7 +34,7 @@ header {
 }
 
 .inner {
-    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0.8rem 1rem;
     /* border: 1px solid red; */
@@ -462,6 +462,7 @@ nav ul li a:hover {
 .contact-btn {
     width: 100%;
     display: block;
+    outline: none;
 }
 
 .contact-btn:hover {
