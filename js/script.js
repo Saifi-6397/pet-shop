@@ -1,31 +1,44 @@
 $(function() {
-    $(".nav-btn").click(function() {
-        $("header nav li").slideToggle();
-    });
+        $(".nav-btn").click(function() {
+            $("header nav li").slideToggle();
+        });
 
-    //scroll up to top 
-    $(window).on("scroll", function() {
-        if ($(window).scrollTop()) {
-            $("header").addClass('scroll')
-        } else {
-            $('header').removeClass('scroll');
-        }
-    });
-    // hover image
+        //scroll up to top 
+        $(window).on("scroll", function() {
+            if ($(window).scrollTop()) {
+                $("header").addClass('scroll')
+            } else {
+                $('header').removeClass('scroll');
+            }
+        });
 
-    $(".product-section .box").hover(function() {
-        $("#text-1").slideToggle('slow');
-        // $(".icons").show();
+        //scroll fix login form
+        $(window).on("scroll", function() {
+            if ($(window).scrollTop()) {
+                $(".login-form").addClass('scroll-login-form-fix')
+            } else {
+                $('.login-form').removeClass('sscroll-login-form-fix');
+            }
+        });
+
+        //aos animation
+        AOS.init({
+            duration: 1000,
+            delay: 400,
+
+        });
+
     })
+    //login form open and close
+function open_login() {
+    document.getElementById("login-form").style.right = "10px"
 
-    //aos animation
-    AOS.init({
-        duration: 1000,
-        delay: 400,
+}
 
-    });
+function close_login() {
+    document.getElementById("login-form").style.right = "-300px"
 
-})
+}
 
 //validation
 var user_name = document.getElementById("name");

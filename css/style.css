@@ -173,6 +173,82 @@ nav ul li a:hover {
 }
 
 
+/*start header login form*/
+
+.login-form {
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    right: -300px;
+    transition: all .3s linear;
+    border-radius: 0.5rem;
+}
+
+.login-form .fas {
+    font-size: 2rem;
+    text-align: right;
+    margin: 1rem;
+    margin-left: 250px;
+}
+
+.login-form .form {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.login-form #email,
+.login-form #password {
+    width: 250px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.login-form input::placeholder {
+    text-transform: capitalize;
+}
+
+.login-form #check {
+    font-size: 2rem;
+    margin: 1rem 0.5rem;
+}
+
+.login-form button {
+    margin: 1rem 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.forget-pass h4 a {
+    font-weight: 300;
+    margin: 1rem 0.2rem;
+    color: #e67e22;
+    display: inline-block;
+}
+
+.forget-pass h4 a:hover {
+    text-decoration: underline;
+    color: #130f40;
+}
+
+
+/* add class for js*/
+
+.scroll-login-form-fix {
+    position: fixed;
+    box-shadow: 0 0 0.5rem gray;
+    z-index: 10;
+    top: 90px;
+}
+
+
+/*end header login form*/
+
+
 /*end home section*/
 
 
